@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+div {
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+.banner {
+  background-image: linear-gradient(to bottom, pink, orange);
+  height: 125vh;
+}
+
+.side {
+  width: 25%;
+  float: right;
+  height: 125vh;
+  background-image: linear-gradient(to bottom, pink, orange);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.sticky.s {
+  width: 75%;
+}
+
+.not-sticky {
+  background-image: linear-gradient(to bottom, navy, rebeccapurple);
+  color: #fff;
+  height: 75vh;
+  position: relative;
+}
+
+.sticky {
+  background-attachment: fixed;
+  background-blend-mode: screen;
+  background-size: cover;
+  height: 125vh;
+  position: sticky;
+  top: 0;
+}
+
+.bg1 {
+  background-image: linear-gradient(to bottom, pink, purple);
+}
+
