@@ -15,50 +15,115 @@ div {
 }
 
 h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
+  color: mediumslateblue;
+  margin-left: 10px;
 }
 
 p {
-  line-height: 1.5;
-  margin-bottom: 1em;
+  line-height: 2;
+  padding: 0 25px;
+  color: mintcream;
+}
+
+nav {
+  background-color: #c4a4f2;
+  height: 75px;
+}
+
+li {
+  display: inline;
+  line-height: 75px;
+  color: bisque;
+  padding: 20px;
+}
+
+.bg1 {
+  background-color: #c4a4f2;
 }
 
 .banner {
-  background-image: linear-gradient(to bottom, pink, orange);
-  height: 125vh;
+  background-blend-mode: screen;
+  background-size: 100% 100%;
+  background-image: url(../ban.jpg);
+  height: 600px;
+}
+.banner h1 {
+  color: white;
+  padding: 50px;
+}
+
+q {
+  color: white;
+  margin-left: 100px;
+  font-size: x-large;
 }
 
 .side {
   width: 25%;
   float: right;
-  height: 125vh;
-  background-image: linear-gradient(to bottom, pink, orange);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  height: 1000px;
+  background-color: #c4a4f2;
+  text-align: center;
+  padding-bottom: 75px;
+}
+.side h2 {
+  text-align: left;
 }
 
-.sticky.s {
+.side img {
+  padding: 20%;
+  width: 100%;
+}
+
+.s {
+  position: sticky;
+  top: 0;
+  padding-top: 75px;
+}
+
+.swrap {
+  height: 1000px;
   width: 75%;
+  text-align: center;
+  padding-bottom: 75px;
+}
+
+.swrap p {
+  background-color: #c4a4f2;
+  z-index: 999;
+}
+
+.swrap p:first-of-type {
+  height: 472px;
+  z-index: 99;
 }
 
 .not-sticky {
-  background-image: linear-gradient(to bottom, navy, rebeccapurple);
+  background-color: #c4a4f2;
   color: #fff;
-  height: 75vh;
+  height: 300px;
   position: relative;
+}
+
+.not-sticky p {
+  padding: 25px 0;
 }
 
 .sticky {
   background-attachment: fixed;
   background-blend-mode: screen;
-  background-size: cover;
-  height: 125vh;
-  position: sticky;
-  top: 0;
+  background-size: 100% 100%;
+  background-image: url(../sticky.jpg);
+  height: 600px;
 }
 
-.bg1 {
-  background-image: linear-gradient(to bottom, pink, purple);
-}
+footer {
+  background-image: linear-gradient(to bottom, #c4a4f2, #dabfff 90%);
+  height: 200px;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
