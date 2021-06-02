@@ -141,6 +141,9 @@ footer {
   padding: 0 5% 10% 5%;
 }
 @media only screen and (max-width: 993px) {
+  .banner h1 {
+    padding: 5%;
+  }
   .banner,
   .sticky {
     height: 275px;
@@ -161,6 +164,9 @@ footer {
   }
   .swrap {
     display: none;
+  }
+  .sticky {
+    background-size: cover;
   }
   .not-sticky {
     padding: 5%;
