@@ -26,18 +26,18 @@ p {
   font-size: large;
 }
 
-.banner {
+header {
   background-blend-mode: screen;
   background-size: 100% 100%;
   background-image: url(../images/ban.jpg);
   height: 600px;
 }
-.banner h1 {
+header h1 {
   color: white;
   padding: 50px;
 }
 
-q {
+header q {
   color: white;
   margin-left: 5%;
   font-size: x-large;
@@ -66,11 +66,17 @@ footer {
 
 /* main */
 
+.s {
+  position: sticky;
+  top: 0;
+  padding-top: 75px;
+}
+
 .bg1 {
   background-color: #c4a4f2;
 }
 
-.side {
+#side {
   width: 25%;
   float: right;
   min-height: 1420px;
@@ -78,39 +84,46 @@ footer {
   padding: 0;
 }
 
-.side h2 {
+#side h2 {
   text-align: left;
 }
 
-.side img {
+#side img {
   padding: 116px 0;
   width: 200px;
 }
 
-.s {
-  position: sticky;
-  top: 0;
-  padding-top: 75px;
+.media {
+  display: none;
+  padding: 0 5% 10% 5%;
 }
 
-.swrap {
+#swrap {
   height: 1420px;
   width: 75%;
   text-align: center;
   padding: 0 0 75px 0;
 }
 
-.swrap p {
+#swrap p {
   height: 472px;
   line-height: 2;
   padding: 40px 75px 0 75px;
 }
 
-.swrap p:last-of-type {
+#swrap p:last-of-type {
   height: unset;
 }
 
-.not-sticky {
+#sticky {
+  background-attachment: fixed;
+  background-blend-mode: screen;
+  background-size: 100% 100%;
+  background-image: url(../images/sticky.jpg);
+  height: 600px;
+}
+
+article {
   background-color: #c4a4f2;
   color: #fff;
   min-height: 300px;
@@ -119,59 +132,48 @@ footer {
   flex-wrap: wrap;
   text-align: center;
 }
-.not-sticky h2 {
+
+article h2 {
   align-self: flex-start;
 }
 
-.not-sticky p {
+article p {
   padding: 50px 50px;
   align-self: baseline;
 }
 
-.sticky {
-  background-attachment: fixed;
-  background-blend-mode: screen;
-  background-size: 100% 100%;
-  background-image: url(../images/sticky.jpg);
-  height: 600px;
-}
-
-.media {
-  display: none;
-  padding: 0 5% 10% 5%;
-}
 @media only screen and (max-width: 993px) {
-  .banner h1 {
+  header h1 {
     padding: 5%;
   }
-  .banner,
-  .sticky {
+  header,
+  #sticky {
     height: 275px;
   }
   h2 {
     margin-left: 0;
   }
-  .side {
+  #side {
     float: none;
     width: 100%;
     padding: 5%;
   }
-  .side img {
+  #side img {
     padding: 5% 0;
   }
   .media {
     display: block;
   }
-  .swrap {
+  #swrap {
     display: none;
   }
-  .sticky {
+  #sticky {
     background-size: cover;
   }
-  .not-sticky {
+  article {
     padding: 5%;
   }
-  .not-sticky p {
+  article p {
     padding: 5% 5%;
   }
 }
