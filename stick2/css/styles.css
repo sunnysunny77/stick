@@ -168,7 +168,7 @@ article p {
     display: none;
   }
   #sticky {
-    background-size: cover;
+    background-attachment: unset;
   }
   article {
     padding: 5%;
