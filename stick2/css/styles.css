@@ -145,6 +145,9 @@ footer {
   .sticky {
     height: 275px;
   }
+  h2 {
+    margin-left: 0;
+  }
   .side {
     float: none;
     width: 100%;
