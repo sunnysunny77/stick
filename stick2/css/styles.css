@@ -116,7 +116,6 @@ footer {
   min-height: 300px;
   position: relative;
   display: flex;
-
   flex-wrap: wrap;
 }
 .not-sticky h2 {
